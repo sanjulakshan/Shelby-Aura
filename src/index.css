@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  body { @apply bg-ink text-ivory font-sans; overflow-x: hidden; }
+  ::selection { @apply bg-gold text-ink; }
+  ::-webkit-scrollbar { width: 9px; }
+  ::-webkit-scrollbar-track { @apply bg-ink; }
+  ::-webkit-scrollbar-thumb { @apply bg-bronze; }
+  :focus-visible { @apply outline outline-2 outline-offset-2 outline-gold; }
+}
+
+@layer components {
+  .container-luxe { @apply mx-auto w-full max-w-[1320px] px-6 md:px-10; }
+  .eyebrow { @apply font-sans text-xs uppercase tracking-luxe text-gold; }
+  .display { @apply font-serif font-light leading-[0.95]; }
+  .text-balance { text-wrap: balance; }
+  .gold-line { @apply h-px w-16 bg-gradient-to-r from-gold to-transparent; }
+  .lux-link { @apply relative inline-block after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gold after:transition-all after:duration-500 hover:after:w-full; }
+  .glass { @apply bg-white/[0.04] backdrop-blur-md border border-white/10; }
+}

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cd \"c:\\\\Users\\\\sanju\\\\Downloads\\\\web\\\\Shelby Aura\"; $job = Start-Job { cd \"c:\\\\Users\\\\sanju\\\\Downloads\\\\web\\\\Shelby Aura\"; npm run dev 2>&1 }; Start-Sleep -Seconds 8; Receive-Job $job; Stop-Job $job; Remove-Job $job)"
+    ]
+  }
+}

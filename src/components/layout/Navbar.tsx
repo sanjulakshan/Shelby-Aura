@@ -17,10 +17,14 @@ export default function Navbar() {
 
   useEffect(() => setOpen(false), [pathname]);
 
+  const isHome = pathname === '/';
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-ink/85 backdrop-blur-md py-4 border-b border-white/5' : 'py-6'
+        scrolled || !isHome
+          ? 'bg-ink/90 backdrop-blur-md py-4 border-b border-white/5'
+          : 'py-6'
       }`}
     >
       <nav className="container-luxe flex items-center justify-between" aria-label="Primary">

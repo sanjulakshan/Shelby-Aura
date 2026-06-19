@@ -43,10 +43,10 @@ export default function SignatureCollections() {
                     {c.name}
                     <ArrowUpRight
                       size={20}
-                      className="text-gold opacity-0 -translate-x-2 transition-all group-hover:opacity-100 group-hover:translate-x-0"
+                      className="text-gold transition-all sm:opacity-0 sm:-translate-x-2 sm:group-hover:opacity-100 sm:group-hover:translate-x-0"
                     />
                   </h3>
-                  <p className="mt-3 max-w-sm text-sm text-ivory/65 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                  <p className="mt-3 max-w-sm text-sm text-ivory/65 transition-opacity duration-500 sm:opacity-0 sm:group-hover:opacity-100">
                     {c.story}
                   </p>
                 </div>

@@ -36,7 +36,11 @@ export default function Navbar() {
         }`}
       >
         <nav className="container-luxe flex items-center justify-between" aria-label="Primary">
-          <Link to="/" className="font-serif text-base sm:text-xl md:text-2xl tracking-[0.18em] sm:tracking-[0.25em] text-ivory">
+          <Link
+            to="/"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="font-serif text-base sm:text-xl md:text-2xl tracking-[0.18em] sm:tracking-[0.25em] text-ivory"
+          >
             SHELBY <span className="text-gold">AURA</span>
           </Link>
 
